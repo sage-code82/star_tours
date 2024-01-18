@@ -7,3 +7,20 @@
     @apply border py-2 px-3 rounded-full;
   }
 }
+
+/* global.css */
+
+@font-face {
+  font-family: "Aurebesh";
+  src: url("./Aurebesh.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.aurebesh-text {
+  font-family: "Aurebesh", sans-serif;
+}
+
+.aurebesh-loaded .aurebesh-text {
+  font-family: "Aurebesh", sans-serif;
+}

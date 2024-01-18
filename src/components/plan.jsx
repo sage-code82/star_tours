@@ -1,6 +1,18 @@
+import { useEffect } from "react";
 import React from "react";
+import FontFaceObserver from "fontfaceobserver";
 
 const Plan = () => {
+  useEffect(() => {
+    const aurebeshFont = new FontFaceObserver("Aurebesh", {
+      weight: "normal",
+      style: "normal",
+    });
+
+    aurebeshFont.load().then(() => {
+      document.documentElement.classList.add("aurebesh-loaded");
+    });
+  }, []);
   return (
     <div className="max-w-[1400] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4">
       <div className="grid grid-cols-2 grid-rows-6 h-[80vh]">
@@ -33,11 +45,11 @@ const Plan = () => {
 
       <div className="flex flex-col h-full justify-center">
         <h3 className="text-5xl md:text-6xl font-bold">Plan Your Next Trip</h3>
-        <p className="text-2xl py-6">
+        <p className="text-2xl py-6 aurebesh-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos,
           aut.
         </p>
-        <p className="pb-6">
+        <p className="pb-6 aurebesh-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
           ratione nisi minus saepe quasi, deleniti molestiae similique? Id
           perspiciatis est molestiae numquam amet recusandae minus, cupiditate
