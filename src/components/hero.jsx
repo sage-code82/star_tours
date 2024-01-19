@@ -1,6 +1,18 @@
 import React from "react";
+import { useEffect } from "react";
+import FontFaceObserver from "fontfaceobserver";
 
 const Hero = () => {
+  useEffect(() => {
+    const aurebeshFont = new FontFaceObserver("Aurebesh", {
+      weight: "normal",
+      style: "normal",
+    });
+
+    aurebeshFont.load().then(() => {
+      document.documentElement.classList.add("aurebesh-loaded");
+    });
+  }, []);
   return (
     <div className="w-full h-screen">
       <img
@@ -14,7 +26,7 @@ const Hero = () => {
           <h1 className="font-bold text-5xl md:text-7xl drop-shadow-2xl">
             Galactic Exploration and Getaways
           </h1>
-          <p className="max-w-[600px] drop-shadow-2xl py-2 text-xl">
+          <p className="max-w-[600px] drop-shadow-2xl py-2 text-xl aurebesh-text">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
             maiores repellat consequuntur magnam ex iusto distinctio culpa
             sapiente totam similique.
