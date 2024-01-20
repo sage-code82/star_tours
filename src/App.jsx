@@ -5,6 +5,7 @@ import Offers from "./components/offers";
 import Plan from "./components/plan";
 import Room from "./components/room";
 import Slider from "./components/slider";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Plan />
       <Room />
       <Slider />
+      <Footer />
     </div>
   );
 }

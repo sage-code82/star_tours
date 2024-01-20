@@ -23,7 +23,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "ease-in duration-300 fixed text-yellow-400 left-0 top-0 w-full h-screen bg-black/70 px-4 py-7 flex-col z-10"
+            ? "ease-in duration-300 fixed text-yellow-400 left-0 top-0 w-full h-screen bg-black/90 px-4 py-7 flex-col z-10"
             : "absolute top-0 h-screen left-[100%] ease-in duration-500 z-10"
         }
       >

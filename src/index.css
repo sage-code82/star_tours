@@ -11,16 +11,27 @@
 /* global.css */
 
 @font-face {
-  font-family: "Aurebesh";
-  src: url("./Aurebesh.otf") format("truetype");
+  font-family: "StarJedi";
+  src: url("/Starjedi.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Aurebesh";
+  src: url("/Aurebesh.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "StarJedi", sans-serif;
 }
 
 .aurebesh-text {
   font-family: "Aurebesh", sans-serif;
 }
 
-.aurebesh-loaded .aurebesh-text {
-  font-family: "Aurebesh", sans-serif;
+.another-font-text {
+  font-family: "AnotherFont", sans-serif;
 }
