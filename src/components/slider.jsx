@@ -17,19 +17,8 @@ const Slider = () => {
   ];
 
   return (
-    <div className="container bg-purple-200">
-      <div className="fixed flex flex-col gap-12 items-center justify-center h-screen w-[10%]">
-        {slides.map((bullet, index) => {
-          return (
-            <img
-              src={bullet.img}
-              className={`bullet-${
-                index + 1
-              }w-12 h-12 rounded-full object-cover`}
-            />
-          );
-        })}
-      </div>
+    <div className="max-w-[1400] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4 bg-purple-200">
+      <div className="fixed flex flex-col gap-12 items-center justify-center h-screen w-[10%]"></div>
       {slides.map((slide) => {
         return (
           <section className="h-screen flex snap-start">
