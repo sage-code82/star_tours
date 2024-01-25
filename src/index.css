@@ -36,17 +36,23 @@ body {
   font-family: "AnotherFont", sans-serif;
 }
 
-@layer components {
-  .container {
-    max-height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-  }
+.slider-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 
-  .mask {
-    -webkit-mask-image: url("./assets/mask_effect.png");
-    -webkit-mask-position: right;
-    -webkit-mask-size: 100% 150%;
-    height: 100%;
-  }
+.current {
+  opacity: 1;
+  visibility: visible;
+}
+
+section {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.current section {
+  opacity: 1;
+  visibility: visible;
 }
