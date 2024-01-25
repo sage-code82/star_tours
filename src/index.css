@@ -8,8 +8,6 @@
   }
 }
 
-/* global.css */
-
 @font-face {
   font-family: "StarJedi";
   src: url("/Starjedi.ttf") format("truetype");
@@ -34,25 +32,4 @@ body {
 
 .another-font-text {
   font-family: "AnotherFont", sans-serif;
-}
-
-.slider-content {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.current {
-  opacity: 1;
-  visibility: visible;
-}
-
-section {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.current section {
-  opacity: 1;
-  visibility: visible;
 }

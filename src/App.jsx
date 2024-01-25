@@ -4,7 +4,6 @@ import Navbar from "./components/navbar";
 import Offers from "./components/offers";
 import Plan from "./components/plan";
 import Room from "./components/room";
-import Slider from "./components/slider";
 import Footer from "./components/footer";
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
       <Offers />
       <Plan />
       <Room />
-      <Slider />
       <Footer />
     </div>
   );
