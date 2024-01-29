@@ -10,6 +10,10 @@ None of the buttons or links currently go anywhere. This will be added on for Ve
 
 practice for building responsive website to be able to be viewed on all devices.
 
+### Version 1.0 update 29.01.24
+
+While trying to sort the Slide Gallery I decided it would look better without it, this then made the website non-responsive so I need to have another look through all the code to see what has stopped it doing this.
+
 ## Version 1.1 to do list
 
 - Hero Image to be an auto gallery
